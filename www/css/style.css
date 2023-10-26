@@ -67,8 +67,12 @@
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 20px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
+    }
+    #btnD {
+        font-size: 20px;
+        position:absolute; top:500px; left:45%; width:28%; height:60px; 
     }
     
     #minute {
@@ -80,5 +84,15 @@
         font-size: 30px;
         position:absolute; top:450px; left:190px; width:80px; height:40px;   
     }
+    #minute1 {
+        font-size: 0px;
+        position:absolute; top:0px; left:0px; width:0px; height:0px;   
+    }
+    
+    #second1 {
+        font-size: 0px;
+        position:absolute; top:0px; left:0px; width:0px; height:0px;   
+    }
+
     
     input[type=number] {text-align: right;}

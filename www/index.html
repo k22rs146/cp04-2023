@@ -38,6 +38,9 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+        $('#btnD').click(function(e) {
+            btnDClick(e);
+        });
         init();
     });
     
@@ -158,6 +161,7 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
         
     }
 
@@ -205,7 +209,15 @@
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間："+ period);
     }
-    
+
+    function btnDClick(e){
+        alarm();
+        active=false;
+        period = 60*parseInt($("#minute1").val())+parseInt($("#second1").val());
+        $("#time").html("経過時間：0");
+        $("#remain").html("残り時間："+ period);
+        
+    }
  
     // 繰り返し実行する処理
     function timer(){ 
@@ -236,7 +248,14 @@
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
+    <button id="btnD">cup noodles</button>  
+
+
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
+    <input type="number" id="minute1" value=3 >
+    <input type="number" id="second1" value=0 >
+
+
 </body>
 </html>
